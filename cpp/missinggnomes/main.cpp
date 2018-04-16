@@ -7,14 +7,14 @@ int main() {
   std::ios_base::sync_with_stdio(false);
 
   int n; // number of gnomes originally [1, 10^5]
-  int m; // number of gnomes which were remained after the trick, [1,10^5]
+  int m; // number of remaining gnomes after the trick, [1,10^5]
   std::cin >> n >> m;
 
   // gnome i is missing if all_gnomes[i] == 0
-  // gnome i was remained if all_gnomes[i] == 1
+  // gnome i is remaining if all_gnomes[i] == 1
   std::vector<int> all_gnomes(n + 1, 0);
 
-  // remaining ids of gnomes after removal
+  // remaining gnomes after removal
   std::vector<int> remaining_gnomes;
   remaining_gnomes.reserve(m);
 
