@@ -1,6 +1,6 @@
+#include <cstddef>
 #include <iostream>
 #include <vector>
-#include <cstddef>
 
 int main() {
   std::cin.tie(nullptr);
